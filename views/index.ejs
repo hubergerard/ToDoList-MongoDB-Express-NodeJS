@@ -6,11 +6,11 @@
   </head>
   <body>
     <div class="hero-unit"><h1><%= h1 %></h1>
-    <p>Welkom op de vakantie todolijst van de Snuutjes!<br>Voeg een todo toe, markeer als compleet of verwijder ze hier.</p></div>
+    <p>Bienvenue sur ma TodoList!<br>Inscrivez toutes vos tâches à faire !</p></div>
     <div class="row-fluid">
     	<div class="list offset3 span6">
     	<table class="table table-hover table-bordered">
-    	<thead class="span6"><tr><th>Wat moeten we nog doen ...</th></tr></thead>
+    	<thead class="span6"><tr><th>Que devons-nous encore faire ...</th></tr></thead>
         <tbody>
             <% todos.forEach( function (todo){ %>
     		<tr>
@@ -18,11 +18,11 @@
                 <% if( todo.completed == true ){ %> class="completed" <%}%> 
                 >
                 <%= todo.title %> <span class="small">(door: <%= todo.create_user %>)</span></td>
-                <td><% if ( todo.completed == false ) { %><a href="<%= localPath %>/complete/<%= todo._id %>">Compleet</a><%}%> 
-                    <% if ( todo.completed == true ) { %><a href="<%= localPath %>/uncomplete/<%= todo._id %>">Niet compleet</a><%}%>
+                <td><% if ( todo.completed == false ) { %><a href="<%= localPath %>/complete/<%= todo._id %>">Completed</a><%}%> 
+                    <% if ( todo.completed == true ) { %><a href="<%= localPath %>/uncomplete/<%= todo._id %>">Uncomplete</a><%}%>
                 </td>
                 <td>
-                    <a href="<%= localPath %>/delete/<%= todo._id %>" onclick="return makesure();">Verwijder</a>
+                    <a href="<%= localPath %>/delete/<%= todo._id %>" onclick="return makesure();">Supprimer</a>
                 </td>
             </tr>
             <% }); %>
@@ -34,14 +34,14 @@
     <div class="list offset3 input-append">
       <form action="<%= localPath %>/create" method="post">
           <input type="text" name="content" autofocus="autofocus"/>
-          <input type="submit" class="btn" name="todo-submit" value="Voeg toe"/>
+          <input type="submit" class="btn" name="todo-submit" value="Ajouter"/>
       </form>
     </div>
   </div>
   <div class="row-fluid">
       <div class="list offset3 span6">
       <table class="table table-hover table-bordered">
-      <thead class="span6"><tr><th>de categorieen</th></tr></thead>
+      <thead class="span6"><tr><th>Les catégories</th></tr></thead>
         <tbody>
             <% tags.forEach( function (tag){ %>
             <tr>
@@ -58,19 +58,13 @@
     <div class="list offset3 input-append">
       <form action="<%= localPath %>/createTag" method="post">
           <input type="text" name="name" autofocus="autofocus"/>
-          <input type="submit" class="btn" name="tag-submit" value="Voeg categorie toe"/>
+          <input type="submit" class="btn" name="tag-submit" value="Ajouter une catégorie"/>
       </form>
     </div>
   </div>
     <script type="text/javascript">
      function makesure() {
-      if (confirm('Zeker weten?\n\n Je kan een todo ook als \'compleet\' markeren!\n\n Echt weggooien?!?')) {
-        return true;
-      }
-      else {
-        return false;
-      }
-     }
+      return confirm('Êtes-vous sûr? \n\n Vous pouvez également marquer une tâche comme \'terminée \' ! \n\n Confirmer la suppression ?');
     </script>
   </body>
 </html>
