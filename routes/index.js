@@ -19,7 +19,7 @@ exports.index = function(req, res){
     console.log("error finding tags", error);
   });
   Todos.find( function(error, todos){
-  	res.render('index', { title: 'TVK: Vakantie ToDoLijst', h1: 'We gaan op vaknassie!', todos: todos, tags: tags});
+  	res.render('index', { title: 'ToDoList', h1: 'Ma TodoList !', todos: todos, tags: tags});
   });
 };
 
@@ -30,7 +30,7 @@ exports.index = function(req, res){
  exports.mobile = function(req, res){
   Todos.find( function(error, todos){
     console.log(todos);
-    res.render('mobile', { title: 'TVK: Vakantie ToDoLijst Mobile', h1: 'We gaan op vaknassie!', todos: todos});
+    res.render('mobile', { title: 'ToDoList Mobile', h1: 'Ma TodoList !', todos: todos});
   });
 };
 
