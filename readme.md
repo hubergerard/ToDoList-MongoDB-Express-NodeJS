@@ -3,6 +3,11 @@ Une app simple utilisant Mongoose and Express
 
 Ce projet a pour but de vous familiariser avec Node.js, Express et Mongoose/MongoDB.
 
+Prérequis
+------------------------------
+npm install à la racine
+Configurer la connexion à MongoDB dans db.js
+
 Fonctionnalités
 ------------------------------
 
