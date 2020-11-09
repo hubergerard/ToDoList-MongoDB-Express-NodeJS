@@ -11,7 +11,7 @@ Configurer la connexion à MongoDB dans db.js
 Fonctionnalités
 ------------------------------
 
-Se connecter à MongoDB en utilisant Mongoose
-Interroger MongoDB, et afficher les documents via ejs.
-Ajouter des items en base.
-Enlever des items en base.
+- Se connecter à MongoDB en utilisant Mongoose
+- Interroger MongoDB, et afficher les documents via ejs.
+- Ajouter des items en base.
+- Enlever des items en base.
