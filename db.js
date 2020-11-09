@@ -5,7 +5,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-mongoose.connect('mogodb://gemini/zwadonk_todos');
+mongoose.connect('mongodb://hubergerard/todos');
 
 var Tag = new Schema({
 	name: String,
