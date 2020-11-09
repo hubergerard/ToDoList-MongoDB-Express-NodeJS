@@ -1,14 +1,12 @@
-A Simple ToDo App using Mongoose and Express
+Une app simple utilisant Mongoose and Express
 ============================================
 
-This was created as a way to get familiar with Node.js, Express and Mongoose/MongoDB. View the demo here: http://andrewvy.com:3000/
+Ce projet a pour but de vous familiariser avec Node.js, Express et Mongoose/MongoDB.
 
-Current working functionality:
+Fonctionnalités
 ------------------------------
 
-Connecting to MongoDB using Mongoose.
-Querying MongoDB, and displaying items through ejs.
-Saving items to DB.
-Removing items from the DB.
-
-Created by Andrew Vy.
+Se connecter à MongoDB en utilisant Mongoose
+Interroger MongoDB, et afficher les documents via ejs.
+Ajouter des items en base.
+Enlever des items en base.
