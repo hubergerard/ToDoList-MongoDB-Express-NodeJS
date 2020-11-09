@@ -4,9 +4,9 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'TVK: Vakantie ToDoLijst', h1: 'We gaan op vakatie!'});
+  res.render('index', { title: 'TodoList', h1: 'Ma TodoList !'});
 };
 
 exports.remove = function(req, res){
-  res.render('remove', {title: 'TVK: Vakantie ToDoLijst', h1: 'Verwijder een item!'})
+  res.render('remove', {title: 'TodoList', h1: 'Supprimer un élement!'})
 };
