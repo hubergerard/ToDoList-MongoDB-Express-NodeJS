@@ -5,8 +5,8 @@ Ce projet a pour but de vous familiariser avec Node.js, Express et Mongoose/Mong
 
 Prérequis
 ------------------------------
-npm install à la racine
-Configurer la connexion à MongoDB dans db.js
+- npm install à la racine
+- Configurer la connexion à MongoDB dans db.js
 
 Fonctionnalités
 ------------------------------
